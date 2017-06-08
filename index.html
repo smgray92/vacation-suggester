@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/script.js"></script>
   <title>Vacation Suggester</title>
@@ -43,40 +43,44 @@
           <option>(b) Not too cold, Not too warm</option>
           <option>(c) Cold and Snowy</option>
         </select>
+        <h2>What kind of food or cuisine do you prefer?</h2>
+        <select class="form-control" id="question4">
+          <option>(a) Mexican or Caribbean Cuisine</option>
+          <option>(b) Asian Cuisine</option>
+          <option>(c) Seafood</option>
+        </select>
         <h2>Which type of place or environment would you like to explore?</h2>
         <div class="radio">
           <label>
-            <input type="radio" name="question4" value="urban" checked>
+            <input type="radio" name="question5" value="urban" checked>
             (a) Beach or coastal
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="question4" value="active">
+            <input type="radio" name="question5" value="active">
             (b) Urban
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="question4" value="both">
+            <input type="radio" name="question5" value="both">
             (c) Rural or forest-like
           </label>
         </div>
-        <h2>What kind of food or cuisine do you prefer?</h2>
-        <select class="form-control" id="question5">
-          <option>(a) Mexican or Caribbean Cuisine</option>
-          <option>(b) Asian Cuisine</option>
-          <option>(c) Seafood</option>
-        </select>
+
         <button type="submit" class="btn btn-primary">Find Out!</button>
       </form>
       <div id="cancun">
+        <img src="img/cancun.jpg" alt="a picture of Cancun">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div id="tokyo">
+        <img src="img/tokyo.jpg" alt="a picture of Tokyo">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div id="alaska">
+        <img src="img/alaska.jpg" alt="a picture of Alaska">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
