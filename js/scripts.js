@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#cancun").hide();
     $("#tokyo").hide();
     $("#alaska").hide();
+    var name = $("input#name").val();
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("#question2").val();
     var question3 = $("#question3").val();
@@ -73,8 +74,9 @@ $(document).ready(function() {
       $("#alaska").show();
     }
     else {
-      alert("Hi");
+      $("#notSure").show();
     }
+    $(".name").text(name);
     $(".cancun").text(cancunPoints);
     $(".tokyo").text(tokyoPoints);
     $(".alaska").text(alaskaPoints);
