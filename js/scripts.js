@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-  $("#cancun").hide();
-  $("#tokyo").hide();
-  $("#alaska").hide();
+    $("#cancun").hide();
+    $("#tokyo").hide();
+    $("#alaska").hide();
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("#question2").val();
     var question3 = $("#question3").val();
@@ -17,39 +17,39 @@ $(document).ready(function() {
     if (question1 === "calm") {
       cancunPoints += 1;
     }
-    else if (question1 ==="active") {
+    else if (question1 === "active") {
       tokyoPoints += 1;
     }
-    else  if (question1 === "adventurous") {
+    else {
       alaskaPoints += 1;
     }
 
-    if (question2 === "Go to the beach and relax") {
+    if (question2 === "(a) Go to the beach and relax") {
       cancunPoints += 1;
     }
-    else if (question2 ==="Enjoy ciy life and visit stores") {
+    else if (question2 === "(b) Enjoy city life and visit stores") {
       tokyoPoints += 1;
     }
-    else if (question2 ==="Appreciate wildlife") {
+    else {
       alaskaPoints += 1;
     }
 
-    if (question3 === "Warm and Sunny") {
+    if (question3 === "(a) Warm and Sunny") {
       cancunPoints += 1;
     }
-    else if (question3 === "Not too cold, Not too warm") {
+    else if (question3 === "(b) Not too cold, Not too warm") {
       tokyoPoints += 1;
     }
-    else if (question3 === "Cold and Snowy") {
+    else {
       alaskaPoints += 1;
     }
-    if (question4 === "Mexican or Caribbean Cuisine") {
+    if (question4 === "(a) Mexican or Caribbean Cuisine") {
       cancunPoints += 1;
     }
-    else if (question4 ==="Asian Cuisine") {
+    else if (question4 === "(b) Asian Cuisine") {
       tokyoPoints += 1;
     }
-    else if (question4 ==="Seafood") {
+    else {
       alaskaPoints += 1;
     }
 
@@ -59,20 +59,24 @@ $(document).ready(function() {
     else if (question5 === "urban") {
       tokyoPoints += 1;
     }
-    else if (question5 === "rural") {
+    else {
       alaskaPoints += 1;
     }
-    if (cancunPoints > tokyoPoints || cancunPoints > alaskaPoints) {
+
+    if (cancunPoints > tokyoPoints && cancunPoints > alaskaPoints) {
       $("#cancun").show();
     }
-    else if (tokyoPoints > cancunPoints || tokyoPoints > alaskaPoints) {
+    else if (tokyoPoints > cancunPoints && tokyoPoints > alaskaPoints) {
       $("#tokyo").show();
     }
-    else if (alaskaPoints > cancunPoints || alaskaPoints > tokyoPoints) {
+    else if (alaskaPoints > cancunPoints && alaskaPoints > tokyoPoints) {
       $("#alaska").show();
     }
     else {
-      alert("All points even");
+      alert("Hi");
     }
+    $(".cancun").text(cancunPoints);
+    $(".tokyo").text(tokyoPoints);
+    $(".alaska").text(alaskaPoints);
   });
 });
