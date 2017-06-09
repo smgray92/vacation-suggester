@@ -1,3 +1,26 @@
 #cancun, #tokyo, #alaska, #notSure {
   display:none;
 }
+
+.title {
+  text-align: center;
+}
+.title-border{
+  position:absolute;
+  bottom: 120px;
+  left:100px;
+}
+
+.background {
+  background-color: #D2B48C;
+}
+
+.plane {
+  border: solid grey;
+  position:absolute;
+  top: 200px;
+  left:120px;
+}
+img {
+  border: solid grey;
+}
