@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#cancun").hide();
     $("#tokyo").hide();
     $("#alaska").hide();
+    $("#notSure").hide();
     var name = $("input#name").val();
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("#question2").val();
