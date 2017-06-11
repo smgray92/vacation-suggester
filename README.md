@@ -6,9 +6,9 @@ _This webpage is a quiz that gives feedback based off of your answers and sugges
 ## Setup
 * _Clone this repository on to the Desktop_
 * _Find and open the "vacation-suggester" folder_
-* _Open the index.html file within the repository_
+* _Open the index.html file within the repository and take the quiz_
 ## Link to site on GitHub pages
-<!-- https://github.com/smgray92/portfolio/tree/gh-pages -->
+https://github.com/smgray92/vacation-suggester/tree/gh-pages
 ## Legal
 Copyright (c) 2017 Sharon Gray
 
