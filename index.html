@@ -9,146 +9,144 @@
 </head>
 <body>
   <div class="background">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-            <img src="img/flight.jpg" alt="image of a plane in the air">
-          </div>
-          <div class="title-border">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <img src="img/flight.jpg" alt="image of a plane in the air">
+        </div>
+        <div class="title-border">
           <div class="well">
-    <div class="title">
-    <h1>Where is Your Perfect Vacation Spot?</h1>
-    <h4>Answer these questions to find out which vacation spot would be ideal for you!</h4>
-  </div>
-  </div>
-  </div>
-  </div>
-
-    <div class="row">
+            <div class="title">
+              <h1>Where is Your Perfect Vacation Spot?</h1>
+              <h4>Answer these questions to find out which vacation spot would be ideal for you!</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
           <div class="well">
-    <form id=quiz>
-      <div class="form-group">
-          <label for="name">Your Name</label>
-            <input id="name" class="form-control" type="text">
+            <form id=quiz>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input id="name" class="form-control" type="text">
+              </div>
+              <h3>Which personality best fits you?</h3>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question1" value="calm" checked>
+                  (a) Calm
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question1" value="active">
+                  (b) Busy
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question1" value="adventurous">
+                  (c) Adventurous
+                </label>
+              </div>
+              <h3>Which type of activity do you prefer to do on a trip?</h3>
+              <select class="form-control" id="question2">
+                <option>(a) Go to the beach and relax</option>
+                <option>(b) Enjoy city life and visit stores</option>
+                <option>(c) Appreciate wildlife</option>
+              </select>
+              <h3>What kind of weather do you prefer on a vacation?<h3>
+                <select class="form-control" id="question3">
+                  <option>(a) Warm and Sunny</option>
+                  <option>(b) Not too cold, Not too warm</option>
+                  <option>(c) Cold and Snowy</option>
+                </select>
+                <h3>What kind of food or cuisine do you prefer?</h3>
+                <select class="form-control" id="question4">
+                  <option>(a) Mexican or Caribbean Cuisine</option>
+                  <option>(b) Asian Cuisine</option>
+                  <option>(c) Seafood</option>
+                </select>
+                <h3>Which type of place or environment would you like to explore?</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="question5" value="beach" checked>
+                    (a) Beach or coastal
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="question5" value="urban">
+                    (b) Urban
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="question5" value="rural">
+                    (c) Rural or forest-like
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Find Out!</button>
+              </form>
+            </div>
           </div>
-      <h3>Which personality best fits you?</h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question1" value="calm" checked>
-          (a) Calm
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question1" value="active">
-          (b) Busy
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question1" value="adventurous">
-          (c) Adventurous
-        </label>
-      </div>
-      <h3>Which type of activity do you prefer to do on a trip?</h3>
-      <select class="form-control" id="question2">
-        <option>(a) Go to the beach and relax</option>
-        <option>(b) Enjoy city life and visit stores</option>
-        <option>(c) Appreciate wildlife</option>
-      </select>
-      <h3>What kind of weather do you prefer on a vacation?<h3>
-        <select class="form-control" id="question3">
-          <option>(a) Warm and Sunny</option>
-          <option>(b) Not too cold, Not too warm</option>
-          <option>(c) Cold and Snowy</option>
-        </select>
-        <h3>What kind of food or cuisine do you prefer?</h3>
-        <select class="form-control" id="question4">
-          <option>(a) Mexican or Caribbean Cuisine</option>
-          <option>(b) Asian Cuisine</option>
-          <option>(c) Seafood</option>
-        </select>
-        <h3>Which type of place or environment would you like to explore?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="beach" checked>
-            (a) Beach or coastal
-          </label>
+          <div class="col-md-6">
+            <div class="plane">
+              <img src="img/gold.jpg" alt="picture of a gold plane on a map">
+            </div>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="urban">
-            (b) Urban
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="rural">
-            (c) Rural or forest-like
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Find Out!</button>
-      </form>
-    </div>
-    </div>
-    <div class="col-md-6">
-      <div class="plane">
-      <img src="img/gold.jpg" alt="picture of a gold plane on a map">
-    </div>
-    </div>
-  </div>
-      <div id="cancun">
-        <h2><span class="name"></span>, Your Ideal Vacation Spot is Cancun, Mexico!</h2>
-        <img src="img/cancun.jpg" alt="a picture of Cancun">
+        <div id="cancun">
+          <h2><span class="name"></span>, Your Ideal Vacation Spot is Cancun, Mexico!</h2>
+          <img src="img/cancun.jpg" alt="a picture of Cancun">
           <div class="row">
             <div class="col-md-7">
               <div class="well">
-        <p>You chose answer choice (a) for <span class="cancun"></span> out of the 5 questions, which means Cancun is the best place for you to go. In Cancun, you can escape completely from the busy city life that you may be having. With tropical and warm weather, you can relax under a palm tree while having ice cold beverages, or you can even walk along the emerald sandy beach. If you are looking to tan, this is the place to go! There are touristic locations, such as Mayan ruins, but this location is mainly for relaxing on the beach and eating tacos!</p>
+                <p>You chose answer choice (a) for <span class="cancun"></span> out of the 5 questions, which means Cancun is the best place for you to go. In Cancun, you can escape completely from the busy city life that you may be having. With tropical and warm weather, you can relax under a palm tree while having ice cold beverages, or you can even walk along the sandy beach. If you are looking to tan, this is the place to go! There are touristic locations, such as Mayan ruins, but this location is mainly for relaxing on the beach and eating tacos!</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-      </div>
-      <div id="tokyo">
-        <h2><span class="name"></span>, Your Ideal Vacation Spot is Tokyo, Japan!</h2>
-        <img src="img/tokyo.jpg" alt="a picture of Tokyo">
-        <div class="row">
+        <div id="tokyo">
+          <h2><span class="name"></span>, Your Ideal Vacation Spot is Tokyo, Japan!</h2>
+          <img src="img/tokyo.jpg" alt="a picture of Tokyo">
+          <div class="row">
             <div class="col-md-7">
-        <div class="well">
-        <p>You chose answer choice (b) for <span class="tokyo"></span> out of the 5 questions, which means Tokyo is the best place for you to go. Tokyo is lively and a heavily populated area, you will not be bored at all during the trip. Explore the subway system and take a ride to major cities, such as Shibuya, Shinjuku, and Harajuku. You can enjoy delicious food, such as sushi, tempura. curry rice, ramen, and many more authentic Japanese food. Japan is also known for having exquisite foreign restaurants, such as French, Chinese, and Italian food. Engage in various activities, such as going shopping, taking "purikura" photobooths with friends and families, and visiting historical sites. Tokyo is not one of the most tourist-friendly places, but the people are welcoming and polite to visitors.</p>
-      </div>
-    </div>
+              <div class="well">
+                <p>You chose answer choice (b) for <span class="tokyo"></span> out of the 5 questions, which means Tokyo is the best place for you to go. Tokyo is lively and a heavily populated area, you will not be bored at all during the trip. Explore the subway system and take a ride to major cities, such as Shibuya, Shinjuku, and Harajuku. You can enjoy delicious food, such as sushi, tempura. curry rice, ramen, and many more authentic Japanese food. Japan is also known for having exquisite foreign restaurants, such as French, Chinese, and Italian food. Engage in various activities, such as going shopping, taking "purikura" photobooths with friends and families, and visiting historical sites. Tokyo is not one of the most tourist-friendly places, but the people are welcoming and polite to visitors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="alaska">
+          <h2><span class="name"></span>, Your Ideal Vacation Spot is Alaska, United States of America!</h2>
+          <img src="img/alaska.jpg" alt="a picture of Alaska">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="well">
+                <p>You chose answer choice (c) for <span class="alaska"></span> out of the 5 questions, which means Alaska is the best place for you to go. Alaska is filled with wilderness, and you can do various siteseeing, such as whale watching and visiting major glacier locations. You might be able to see elk and bears near the streets as well! Alaska is mostly a cold and snowy place, but during the Summer, the climate is typically warmer and you can see more green and vegetation (a different type of beauty compared to snowy wilderness). You can take a train in Skagway and view nature and look for exotic animals. Another activity that is entertaining is the lumberjack shows in Ketchikan. Make sure to check when it is the best time for you to go to Alaska, because it can get pretty cold up there depending on which season it is!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id=notSure>
+          <h2><span class="name"></span>, you're might not be sure yet.</h2>
+          <img src="img/confused.jpg" alt="a picture of confused pugs">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well">
+                <ul>
+                  <li>Answer (a) were choices that matched with warm tropical climate weather like Cancun, Mexico.</li>
+                  <li>Answer (b) were choices that matched with busy city lifestyle like Tokyo, Japan.</li>
+                  <li>Answer (c) were choices that matched with nature-filled and chilly environments like Alaska, U.S.A.</li>
+                </ul>
+                <p>You chose answer (a) for <span class="cancun"></span> out of the 5 questions, answer (b) for <span class="tokyo"></span> out of the 5 questions, and answer (c) for <span class="alaska"></span> out of the 5 questions, which means you might not be sure which vacation style you enjoy the most, or you might be fairly neutral and love visiting a variety of places around the world!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="alaska">
-        <h2><span class="name"></span>, Your Ideal Vacation Spot is Alaska, United States of America!</h2>
-        <img src="img/alaska.jpg" alt="a picture of Alaska">
-        <div class="row">
-          <div class="col-md-7">
-        <div class="well">
-        <p>You chose answer choice (c) for <span class="alaska"></span> out of the 5 questions, which means Alaska is the best place for you to go. Alaska is filled with wilderness, and you can do various siteseeing, such as whale watching and visiting major glacier locations. You might be able to see elk and bears near the streets as well! Alaska is mostly a cold and snowy place, but during the Summer, the climate is typically warmer and you can see more green and vegetation (a different type of beauty compared to snowy wilderness). You can take a train in Skagway and view nature and look for exotic animals. Another activity that is entertaining is the lumberjack shows in Ketchikan. Make sure to check when it is the best time for you to go to Alaska, because it can get pretty cold up there depending on which season it is!</p>
-      </div>
     </div>
-        </div>
-      </div>
-      <div id=notSure>
-        <h2><span class="name"></span>, you're not really sure yet?</h2>
-        <img src="img/confused.jpg" alt="a picture of confused pugs">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="well">
-        <ul>
-          <li>Answer (a) were choices that matched with warm tropical climate weather like Cancun, Mexico.</li>
-          <li>Answer (b) were choices that matched with busy city lifestyle like Tokyo, Japan.</li>
-          <li>Answer (c) were choices that matched with nature-filled and chilly environments like Alaska, U.S.A.</li>
-        </ul>
-        You chose answer (a) for <span class="cancun"></span> out of the 5 questions, answer (b) for <span class="tokyo"></span> out of the 5 questions, and answer (c) for <span class="alaska"></span> out of the 5 questions, which means you might not be sure which vacation style you enjoy the most, or you might be fairly neutral and love visiting a variety of places around the world!
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
   </body>
   </html>
